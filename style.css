@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #212529f0;
+    position: fixed;
+    
+}
+header{
+    background-color: #212529;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+header .boxes{
+    justify-content: space-between;
+}
+header ul{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+ 
+  
+  #welcome img{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  #welcome .boxes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50,-50);
+    color: white;
+  }
+  #welcome .boxes h4{
+    font-size: 32px;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 32px;
+}
+#welcome .boxes h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 64px;
+}
+#welcome .boxes a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+} 
+ #services{
+    padding: 4rem 0;
+}
+#services .top-text{
+    text-align: center;
+}
+#services .boxes{
+    margin-top: 15px;
+}
+#services .boxes .box{
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+}
+
+#services .boxes .box i{
+    font-size: 35px;
+    background-color: orange;
+    padding: 20px 23px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+
+}
+#portfolio{
+    background-color: rgba(128, 128, 128, 0.384);
+    padding: 5rem 0;
+}
+#portfolio .boxes .box{
+    width: 30%;
+    margin: 20px;
+}
+#portfolio .boxes .box .top-box img{
+    width: 100%;
+    height: 100%;
+}
+#portfolio .boxes .box .top-box{
+    position: relative;
+}
+#portfolio .boxes .box .top-box .yellow-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.547);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+#portfolio .boxes .box .top-box .yellow-box i{
+    font-size: 34px;
+    color: white;
+}
+#portfolio .boxes .box .bottom-box{
+    text-align: center;
+    background-color: white;
+    padding: 24px 0;
+    box-shadow: 0 0 20rem 0 black;
+}
+#portfolio .boxes .box:hover .yellow-box{
+    opacity: 1;
+}
